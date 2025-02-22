@@ -3,13 +3,42 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    width: 100vw
+    width: 100vw;
 }
   
 .card-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 16px;
+}
+
+/* Estilização dos cards */
+.card {
+    background-color: #1a1a1a; /* Fundo escuro para os cards */
+    padding: 16px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* Ajustando as imagens dentro dos cards */
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Título do card acima do valor */
+.card h3 {
+    color: white; /* Define o texto como branco */
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+/* Estilizando o valor */
+.card p {
+    font-size: 18px;
+    font-weight: bold;
+    color: white; /* Deixa o valor em branco */
 }
   
 .container button {
@@ -20,10 +49,13 @@
     bottom: 16px;
     right: 24px;
     transition: all 0.1s linear 0.1s;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
 }
   
 .container button:hover {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 7px 0px;
     transform: scale(1.1);
 }
-  
